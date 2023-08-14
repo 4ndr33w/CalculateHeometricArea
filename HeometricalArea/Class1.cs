@@ -1,6 +1,6 @@
 ﻿namespace HeometricalArea
 {
-    public class HeometricFigureArea
+    public static class HeometricFigureArea
     {
 
         public static double GetCircleArea(double radius)
