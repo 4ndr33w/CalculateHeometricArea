@@ -3,9 +3,9 @@
     public static class HeometricFigureArea
     {
 
-        public static double GetFlatFigureArea(double radius)
+        public static double GetFlatFigureArea(double circleRadius)
         {
-            return ( 2 * Math.PI * Math.Pow(radius, 2) );
+            return ( 2 * Math.PI * Math.Pow(circleRadius, 2) );
         }
 
         public static double GetFlatFigureArea(double sideAB, double sideBC, double sideAC)
