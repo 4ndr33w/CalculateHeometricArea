@@ -3,7 +3,7 @@
     public static class HeometricFigureArea
     {
 
-        public static double GetCircleArea(double radius)
+        public static double GetFlatFigureArea(double radius)
         {
             return ( 2 * Math.PI * Math.Pow(radius, 2) );
         }
@@ -17,9 +17,9 @@
 
         public static string GetTriangleType(double sideAB, double sideBC, double sideAC)
         {
-            double isABisHypotenuse = Math.Sqrt(Math.Pow(sideAC, 2) * Math.Pow(sideBC, 2));
-            double isACisHypotenuse = Math.Sqrt(Math.Pow(sideAB, 2) * Math.Pow(sideBC, 2));
-            double isBCisHypotenuse = Math.Sqrt(Math.Pow(sideAB, 2) * Math.Pow(sideAC, 2));
+            double isABisHypotenuse = Math.Sqrt(Math.Pow(sideAC, 2) + Math.Pow(sideBC, 2));
+            double isACisHypotenuse = Math.Sqrt(Math.Pow(sideAB, 2) + Math.Pow(sideBC, 2));
+            double isBCisHypotenuse = Math.Sqrt(Math.Pow(sideAB, 2) + Math.Pow(sideAC, 2));
             if ( 
                 (sideAB == sideBC || sideAB == sideAC || sideBC == sideAC) &&
                 (isABisHypotenuse == sideAB || isACisHypotenuse == sideAC || isBCisHypotenuse == sideBC) 
